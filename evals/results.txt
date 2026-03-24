@@ -1,0 +1,105 @@
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  ROUTING BENCHMARK v4 ΓÇö FINAL HYPOTHESIS TEST
+  Algorithm #13: TF-IDF + Failure Cost + Implicit Scope
+  Goal: Hit 89%+ accuracy
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+ΓöéAlgorithm                          Γöé Accuracy Γöé Avg ms   Γöé HiRiskΓåô  Γöé CostlyΓåô  Γöé WasteΓåæ   Γöé Misses   Γöé
+Γö£ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöñ
+Γöé ClawRouter (Baseline)              Γöé    52.9% Γöé    0.116 Γöé       15 Γöé       10 Γöé        0 Γöé       33 Γöé
+Γöé Task-Type+FailureCost (v1)         Γöé    74.3% Γöé    0.013 Γöé        1 Γöé        3 Γöé        0 Γöé       18 Γöé
+Γöé Optimal Hybrid (v2 winner)         Γöé    74.3% Γöé    0.066 Γöé        1 Γöé        2 Γöé        0 Γöé       18 Γöé
+Γöé TF-IDF+FailureCost+Scope (v4)      Γöé    90.0% Γöé    0.067 Γöé        0 Γöé        0 Γöé        2 Γöé        7 Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+
+ΓöÇΓöÇΓöÇ Per-Tier Accuracy ΓöÇΓöÇΓöÇ
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+ΓöéAlgorithm                          Γöé  SIMPLE  Γöé  MEDIUM  Γöé  COMPLEX Γöé  REASON  Γöé
+Γö£ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöñ
+Γöé ClawRouter (Baseline)              Γöé      92% Γöé      45% Γöé       0% Γöé      63% Γöé
+Γöé Task-Type+FailureCost (v1)         Γöé      68% Γöé      75% Γöé      82% Γöé      75% Γöé
+Γöé Optimal Hybrid (v2 winner)         Γöé      88% Γöé      50% Γöé      82% Γöé      75% Γöé
+Γöé TF-IDF+FailureCost+Scope (v4)      Γöé      80% Γöé      95% Γöé      94% Γöé     100% Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+
+ΓöÇΓöÇΓöÇ Confusion Matrix: TF-IDF+FailureCost+Scope ΓöÇΓöÇΓöÇ
+
+           Predicted ΓåÆ
+  Actual Γåô  SIMPLE  MEDIUM  COMPLEX  REASON
+  SIMPLE        20       3        2       0
+  MEDIUM         1      19        0       0
+  COMPLEX        0       0       16       1
+  REASONING      0       0        0       8
+
+ΓöÇΓöÇΓöÇ Misclassifications: TF-IDF+FailureCost+Scope ΓöÇΓöÇΓöÇ
+
+Total misses: 7 / 70
+
+SIMPLEΓåÆMEDIUM (3 cases):
+  Γ¥î "who is the president of the United States"
+  Γ¥î "function add(a: number, b: number): number { return a + b; }"
+  Γ¥î "how do i center a div in css"
+
+MEDIUMΓåÆSIMPLE (1 cases):
+  Γ¥î "write hello world in 5 programming languages"
+
+COMPLEX errors (3 cases):
+  Γ¥î [SIMPLEΓåÆCOMPLEX] "fix it"
+  Γ¥î [SIMPLEΓåÆCOMPLEX] "{"error": "404 not found", "message": "resource not found"}"
+  Γ¥î [COMPLEXΓåÆREASONING] "analyze the performance bottlenecks in this Node.js application and..."
+
+REASONING errors (1 cases):
+  Γ¥î [COMPLEXΓåÆREASONING] "analyze the performance bottlenecks in this Node.js application and..."
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  FINAL VERDICT
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+≡ƒÄë SUCCESS! TF-IDF achieved 90.0% accuracy (target: 89%+)
+
+Γ£ô Algorithm is production-ready
+Γ£ô High-risk misroutes: 0
+Γ£ô Avg latency: 0.067 ms
+
+ΓåÆ RECOMMENDATION: Ship TF-IDF+FailureCost+Scope as the new router
+
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  MASSIVE EVALUATION: Stanford Alpaca Dataset
+  Testing TF-IDF + Failure Cost + Scope Router on 500 real queries
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+Γ¼ç∩╕Å  Downloading dataset from https://raw.githubusercontent.com/tatsu-lab/stanford_alpaca/main/alpaca_data.json...
+Γ£à Downloaded 52002 prompts in 744ms.
+
+≡ƒÜÇ Running routing on 500 prompts...
+
+ΓöÇΓöÇΓöÇ Speed & Performance ΓöÇΓöÇΓöÇ
+Avg Latency:  0.144 ms
+Max Latency:  0.757 ms
+Total Time:   72.1 ms
+
+ΓöÇΓöÇΓöÇ Tier Distribution ΓöÇΓöÇΓöÇ
+SIMPLE:       151 (30.2%)
+MEDIUM:       299 (59.8%)
+COMPLEX:       20 (4.0%)
+REASONING:     30 (6.0%)
+
+ΓöÇΓöÇΓöÇ Random Samples by Tier ΓöÇΓöÇΓöÇ
+
+[ SIMPLE ]
+  ΓÇó "Generate questions that is related to the sentence.  She likes to garden in her free time."
+  ΓÇó "What is the name of the East Asian country that borders Russia, China and North Korea?"
+
+[ MEDIUM ]
+  ΓÇó "Create a list of five things one should do before traveling."
+  ΓÇó "Rewrite the following sentence in its passive voice:  "The engineer designed the machine.""
+
+[ COMPLEX ]
+  ΓÇó "List 4 elements of a contract."
+  ΓÇó "Design a job application form"
+
+[ REASONING ]
+  ΓÇó "Transform the following sentence argument into a categorized list.  Americans waste a lot of food."
+  ΓÇó "Come up with an example of a person exhibiting traits from the Big 5 personality traits."
