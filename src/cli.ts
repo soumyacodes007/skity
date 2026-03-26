@@ -12,7 +12,7 @@
 import "dotenv/config";
 import readline from "readline";
 import algosdk from "algosdk";
-import { x402Client } from "@x402-avm/fetch";
+import { x402Client, decodePaymentResponseHeader } from "@x402-avm/fetch";
 import { wrapFetchWithPayment } from "@x402-avm/fetch";
 import { registerExactAvmScheme } from "@x402-avm/avm/exact/client";
 import type { ClientAvmSigner } from "@x402-avm/avm";
@@ -126,7 +126,6 @@ async function main() {
   console.log("   Fund your wallet: https://bank.testnet.algorand.network");
   console.log("   View tx on Lora : https://lora.algokit.io/testnet\n");
   console.log('   Type your prompt and press Enter. Type "exit" to quit.\n');
-  console.log("─".repeat(62));
 
   while (true) {
     const userInput = await prompt("\n> ");
@@ -152,17 +151,20 @@ async function main() {
 
     // Check for payment response header (contains settlement tx ID)
     const paymentResponseHeader = response.headers.get("PAYMENT-RESPONSE");
+    
     if (paymentResponseHeader) {
       try {
-        const parsed = JSON.parse(
-          Buffer.from(paymentResponseHeader, "base64").toString("utf-8")
-        );
-        const txId: string = parsed?.transaction?.txId ?? parsed?.txId ?? "";
+        const receipt = decodePaymentResponseHeader(paymentResponseHeader);
+        
+        // Extract transaction ID from receipt - try multiple possible field names
+        const txId = receipt?.transaction || receipt?.txId || receipt?.transactionId;
+        
         if (txId) {
-          console.log(`\n🔗 View on Lora: https://lora.algokit.io/testnet/transaction/${txId}`);
+          console.log(`\n   🔗 Transaction: ${txId}`);
+          console.log(`   📊 View on Lora: https://lora.algokit.io/testnet/transaction/${txId}`);
         }
-      } catch {
-        // silently ignore parse errors on the payment response header
+      } catch (e) {
+        console.log(`   [Debug] Failed to decode payment response:`, e);
       }
     }
 
@@ -192,9 +194,7 @@ async function main() {
       );
     }
 
-    console.log("\n─".repeat(62));
-    console.log(data.reply);
-    console.log("─".repeat(62));
+    console.log(`\n${data.reply}\n`);
   }
 }
 

@@ -40,10 +40,10 @@ if (!OPENROUTER_API_KEY) {
 // ─── Tier → Free OpenRouter Model Map ────────────────────────────────────────
 
 const TIER_MODELS: Record<Tier, string> = {
-  SIMPLE: "meta-llama/llama-3.1-8b-instruct:free",
-  MEDIUM: "meta-llama/llama-3.3-70b-instruct:free",
-  COMPLEX: "qwen/qwen3-coder:free",
-  REASONING: "deepseek/deepseek-r1:free",
+  SIMPLE: "openrouter/free",
+  MEDIUM: "openrouter/free",
+  COMPLEX: "openrouter/free",
+  REASONING: "openrouter/free",
 };
 
 // Tier → USD micropayment price
