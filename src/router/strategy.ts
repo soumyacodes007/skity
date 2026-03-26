@@ -304,3 +304,26 @@ export function getStrategy(name: string): RouterStrategy {
 export function registerStrategy(strategy: RouterStrategy): void {
   registry.set(strategy.name, strategy);
 }
+
+// ─── Backward Compat Alias ────────────────────────────────────────────────────
+// The original router was called "RulesStrategy". After the entropy refactor
+// EntropyStrategy is the canonical implementation. Export the alias as a
+// delegation wrapper so existing test files continue to compile.
+export class RulesStrategy implements RouterStrategy {
+  readonly name = "rules" as const;
+  private readonly _impl = new EntropyStrategy();
+
+  route(
+    prompt: string,
+    systemPrompt: string | undefined,
+    maxOutputTokens: number,
+    options: RouterOptions,
+  ): RoutingDecision {
+    return this._impl.route(prompt, systemPrompt, maxOutputTokens, options);
+  }
+}
+
+// Register under "rules" so getStrategy("rules") works in tests
+registry.set("rules", new RulesStrategy());
+
+

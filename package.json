@@ -1,0 +1,32 @@
+{
+  "name": "x402-llm-router",
+  "version": "0.1.0",
+  "description": "Algorand x402-powered LLM router with Token Entropy classification",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "server": "tsx src/server.ts",
+    "cli": "tsx src/cli.ts",
+    "dev": "tsx watch src/server.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@x402-avm/avm": "latest",
+    "@x402-avm/core": "latest",
+    "@x402-avm/express": "latest",
+    "@x402-avm/fetch": "latest",
+    "algosdk": "^3.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^3.0.0"
+  }
+}
